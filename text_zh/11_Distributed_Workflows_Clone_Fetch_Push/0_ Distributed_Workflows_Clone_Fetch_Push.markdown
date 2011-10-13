@@ -20,7 +20,7 @@ Bob 做了一些修改并且提交(commit)它们:
     (repeat as necessary)
 
 
-当他准备好了，他告诉Alice从仓库/home/bob/myrepo中把他的个修改给拉
+当他准备好了，他告诉Alice从仓库/home/bob/myrepo中把他的修改给拉
 (pull)下来。她执行了下面几条命令:
 
     $ cd /home/alice/project
@@ -48,7 +48,7 @@ git pull命令执行两个操作: 它从远程分支(remote branch)抓取修改
     $ git fetch bob
 
 我们用`git remote`命令建立了Bob的运程仓库的缩写，用这个(缩写)
-名字我从Bob的那得到所有远程分支的历史记录。在这里远程分支的名
+名字我从Bob那得到所有远程分支的历史记录。在这里远程分支的名
 字就叫`bob/master`.
 
     $ git log -p master..bob/master
@@ -88,7 +88,7 @@ linkgit:git-config[1] 的帮助文件里解释了每个参数的含义.)
 
 
 Git同时也保存了一份最初(pristine)的Alice主分支(master)，在
-"rigin/master"下面。
+"origin/master"下面。
 
     $ git branch -r
       origin/master
@@ -171,7 +171,7 @@ or just
 
     $ git push ssh://yourserver.com/~you/proj.git master
 
-和git-fetch, 命令一样giit-push如是命令的执行结果不是"快速向前"(fast forward)
+和git-fetch命令一样git-push如果命令的执行结果不是"快速向前"(fast forward)
 就会报错; 下面的章节会讲如何处理这种情况.
 
 
@@ -212,7 +212,7 @@ branch.<name>.remote, 和remote.<name>.push等选项的解释.
     error: failed to push to 'ssh://yourserver.com/~you/proj.git'
 
 
-这种情况产生通常由以下的原因产生：
+这种情况通常由以下的原因产生：
 
 
 	- 用 `git-reset --hard` 删除了一个已经发布了的一个提交，或是
@@ -222,7 +222,7 @@ branch.<name>.remote, 和remote.<name>.push等选项的解释.
 	- 用 `git-rebase` 去rebase一个已经发布的提交.　 
 
 
-你可以强制git-push在上传修改时先更先，只要分支名前面加一个加号。
+你可以强制git-push在上传修改时先更新，只要在分支名前面加一个加号。
 
 
     $ git push ssh://yourserver.com/~you/proj.git +master

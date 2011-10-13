@@ -15,12 +15,12 @@
 
 用git协议导出git仓库, 这是推荐的方法.
 
-如果这台服务器上有管理员，TA们要行诉你把仓库放在哪一个目录中, 并且“git:// URL”除仓库目录部分外是什么.
+如果这台服务器上有管理员，TA们要告诉你把仓库放在哪一个目录中, 并且“git:// URL”除仓库目录部分外是什么.
 
 
 你现在要做的是启动 linkgit:git-daemon[1]; 它会监听在 9418端口. 默认情况下它会允许你访问所有的git目录(看目录中是否有git-daemon-export-ok文件). 如果以某些目录做为 git-daemon 的参数, 那么 git-daemon 会限制用户通过git协议只能访问这些目录.
 
-你以可以在inetd service模式下运行 git-daemon; 点击 linkgit:git-daemon[1]　可以查看帮助信息.
+你可以在inetd service模式下运行 git-daemon; 点击 linkgit:git-daemon[1]　可以查看帮助信息.
 
 ### 通过http协议导出git仓库 ###
 

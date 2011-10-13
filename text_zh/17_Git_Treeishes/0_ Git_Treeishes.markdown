@@ -12,12 +12,12 @@
 	980e3ccdaac54a0d4
 	980e3cc
 
-只要你的‘sha短名’(Partial Sha)是不重复的(unique)，它就不会和其它名字到冲突(如果你使用了5个字节以上那是很难重复的)，git也会把‘sha短名’(Partial Sha)自动补全.
+只要你的‘sha短名’(Partial Sha)是不重复的(unique)，它就不会和其它名字冲突(如果你使用了5个字节以上那是很难重复的)，git也会把‘sha短名’(Partial Sha)自动补全.
 
 
 ### 分支, Remote 或 标签 ###
 
-你可以使用分支,remote或标签名来代替SHA串名, 它们只是指向某个对象的指针. 假设你的master分支目前在在提交(commit):'980e3'上, 现在把它推送(push)到origin上并把它命名为标签'v1.0', 那么下面的串都会被git视为等价的:
+你可以使用分支,remote或标签名来代替SHA串名, 它们只是指向某个对象的指针. 假设你的master分支目前在提交(commit):'980e3'上, 现在把它推送(push)到origin上并把它命名为标签'v1.0', 那么下面的串都会被git视为等价的:
 
 	980e3ccdaac54a0d4de358f3fe5d718027d96aae
 	origin/master

@@ -1,6 +1,6 @@
 ## 查找问题的利器 - Git Bisect ##
 
-假设你在项目的'2.6.18'版上面工作, 但是你当前的代码(master)崩溃(crash)了. 有时解决这种问题这种问题的最好办法是: 手工逐步恢复(brute-force regression)项目历史,　找出是哪个提交(commit)导致了这个问题. 但是 linkgit:git-bisect[1](二分查找) 可以更好帮你解决这个问题:
+假设你在项目的'2.6.18'版上面工作, 但是你当前的代码(master)崩溃(crash)了. 有时解决这种问题的最好办法是: 手工逐步恢复(brute-force regression)项目历史,　找出是哪个提交(commit)导致了这个问题. 但是 linkgit:git-bisect[1](二分查找) 可以更好帮你解决这个问题:
 
     $ git bisect start
     $ git bisect good v2.6.18

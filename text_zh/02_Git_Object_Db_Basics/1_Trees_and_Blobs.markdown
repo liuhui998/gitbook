@@ -21,7 +21,7 @@
 
 ### Tree 对象 ###
 
-一个tree对象有一串(bunch)指向blob对象或是其它tree对象的指针，它一般用来来表示内容之间的目录层次关系。
+一个tree对象有一串(bunch)指向blob对象或是其它tree对象的指针，它一般用来表示内容之间的目录层次关系。
 
 [fig:object-tree]
 
