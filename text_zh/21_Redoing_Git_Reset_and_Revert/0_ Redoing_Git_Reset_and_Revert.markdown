@@ -8,7 +8,7 @@ Git提供了多种修复你开发过程中的错误的方法. 方法的选择取
 
     $ git reset --hard HEAD
 
-这条件命令会把你工作目录中所有未提交的内容清空(当然这不包括未置于版控制下的文件 untracked files). 从另一种角度来说, 这会让"git diff" 和"git diff --cached"命令的显示法都变为空.
+这条命令会把你工作目录中所有未提交的内容清空(当然这不包括未置于版控制下的文件 untracked files). 从另一种角度来说, 这会让"git diff" 和"git diff --cached"命令的显示法都变为空.
 
 如果你只是要恢复一个文件,如"hello.rb", 你就要使用 linkgit:git-checkout[1]
 
