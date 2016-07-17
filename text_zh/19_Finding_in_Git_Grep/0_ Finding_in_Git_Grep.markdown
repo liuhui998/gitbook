@@ -34,7 +34,7 @@
 	wrapper.c:89:void *xmmap(void *start, size_t length,
 
 
-如果我们想只显示文件名, 我们可以使用'--name-onley'选项:
+如果我们想只显示文件名, 我们可以使用'--name-only'选项:
 
 	$>git grep --name-only xmmap
 	config.c
