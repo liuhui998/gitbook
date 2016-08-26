@@ -1,7 +1,7 @@
 ## 分布式的工作流程 ##
 
 假设Alice现在开始了一个新项目，在/home/alice/project建了一个新的git
-仓库(repository)；另一个叫Bob的工作目录也在同一台机器，他要提交代码。
+仓库(repository)；另外Bob的工作目录也在同一台机器，他要提交代码。
 
 Bob 执行了这样的命令:
 
@@ -42,7 +42,7 @@ git pull命令执行两个操作: 它从远程分支(remote branch)抓取修改
     $ git remote add bob /home/bob/myrepo
 
 
-这样，Alic可以用"git fetch"" 来执行"git pull"前半部分的工作，
+这样，Alic可以用"git fetch"来执行"git pull"前半部分的工作，
 但是这条命令并不会把抓下来的修改合并到当前分支里。
 
     $ git fetch bob
