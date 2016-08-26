@@ -24,7 +24,7 @@
 
 你可以点这里 linkgit:gitignore[5] 查看一下详细的语法解释. 你也可以把".gitignore"
 这个文件放到工作树(working tree)里的其它目录中，这就会在它和它的子目录起忽略(ignore)
-指定文件的作用。`.gitignor`文件同样可以像其它文件一样加到项目仓库里( 直接用
+指定文件的作用。`.gitignore`文件同样可以像其它文件一样加到项目仓库里( 直接用
 `git add .gitignore` 和 `git commit`等命令), 这样项目里的其它开发者也能共享同一套忽略
 文件规则。
 
