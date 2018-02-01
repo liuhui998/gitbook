@@ -55,7 +55,7 @@
 
     $ git branch -d experimental
 
-git branch -d只能删除那些已经被当前分支的合并的分支. 如果你要强制删除某个分支的话就用git branch –D；下面假设你要强制删除一个叫”crazy-idea”的分支：
+git branch -d只能删除那些已经被当前分支的合并的分支。如果你要强制删除某个分支的话就用git branch –D；下面假设你要强制删除一个叫“crazy-idea”的分支：
 
     $ git branch -D crazy-idea
 
