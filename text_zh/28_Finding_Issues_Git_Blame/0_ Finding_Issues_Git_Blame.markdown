@@ -3,6 +3,7 @@
 如果你要查看文件的每个部分是谁修改的, 那么 linkgit:git-blame[1] 就是不二选择. 只要运行'git blame [filename]', 你就会得到整个文件的每一行的详细修改信息:包括SHA串,日期和作者:
 
 译者注: Git采用SHA1做为hash签名算法, 在本书中,作者为了表达方便,常常使用SHA来代指SHA1. 如果没有特别说明, 本书中的SHA就是SHA1的代称.
+
 	$ git blame sha1_file.c
 	...
 	0fcfd160 (Linus Torvalds  2005-04-18 13:04:43 -0700    8)  */
