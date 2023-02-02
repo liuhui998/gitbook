@@ -8,6 +8,13 @@ require "uv"
 #MIN_SIZE = 1200
 MIN_SIZE = 800
 
+# Fix for new ruby version don't have exists? function.
+class File
+  def self.exists?(file_name)
+    return File.exist?(file_name)
+  end
+end
+
 def do_replacements(html, type = :html)
 
   # highlight code
@@ -51,7 +58,7 @@ end
 desc 'Create the HTML version'
 task :html => :merge do
   
-  if File.exists?('output/full_book.markdown')
+  if File.exist?('output/full_book.markdown')
     output = File.new('output/full_book.markdown').read
     output = RDiscount.new(output).to_html
 
