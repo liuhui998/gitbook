@@ -1,4 +1,5 @@
 require './script/merge'
 require './script/html'
 require './script/pdf'
+require './script/pdf1'
 require './script/prince'
