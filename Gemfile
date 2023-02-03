@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-ruby '3.2.0'
+#ruby '3.2.0'
 source "https://rubygems.org"
 
 gem 'rake', '~> 13.0'# (13.0.6)
