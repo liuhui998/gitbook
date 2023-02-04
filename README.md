@@ -6,7 +6,8 @@
 
 作者：
 
-* Scott Chacon
+* [Scott Chacon](https://scottchacon.com/)
+
 * Emil Sit
 
 译者：
