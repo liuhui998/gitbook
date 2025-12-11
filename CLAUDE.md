@@ -27,6 +27,10 @@ The build system follows a multi-stage pipeline:
    - `rake pdf`: Uses Prince XML (legacy, requires commercial license)
    - `rake pdf1`: Uses PDFKit/wkhtmltopdf (current method)
    - Generates `output/book.pdf` from `output/index.html`
+4. **Sitemap Phase** (`rake sitemap`):
+   - Generates `sitemap.xml` for SEO optimization
+   - Automatically includes all HTML chapter files
+   - Sets appropriate priority and change frequency for each page
 
 ### Key Build Commands
 
@@ -40,6 +44,9 @@ rake html
 # Generate PDF book (includes HTML step)
 rake pdf1          # Current method using PDFKit
 rake pdf           # Legacy method using Prince XML
+
+# Generate sitemap.xml (includes HTML step)
+rake sitemap       # Generates SEO-optimized sitemap
 
 # Individual steps
 rake merge         # Only merge markdown files
@@ -68,6 +75,7 @@ Files are sorted alphabetically during merge, so numbering prefixes control orde
 - **output/book/**: Multi-page HTML book
   - `index.html`: Table of contents
   - `1_1.html`, `1_2.html`, etc.: Individual chapters
+  - `sitemap.xml`: SEO sitemap for search engines
   - `images/`: Copied assets
 - **output/book.pdf**: Final PDF
 
