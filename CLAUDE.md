@@ -148,6 +148,31 @@ rake pdf1 && open output/book.pdf
 - **builder**: XML/HTML generation for TOC
 - **pdfkit + wkhtmltopdf-binary**: PDF generation
 
+## Recent Fixes
+
+### Build System Improvements (2025-12-11)
+
+**Fixed Cloudflare Pages deployment failures**:
+
+1. **PDF Generation Error Handling**: Added try-catch block in `script/pdf1.rb` to gracefully handle PDF generation failures in build environments where wkhtmltopdf may not be available
+   - PDF generation now continues even if it fails
+   - Build process completes successfully with HTML-only output
+   - Error messages clearly indicate PDF generation status
+
+2. **Output Directory Creation**: Fixed `script/merge.rb` to ensure `output/` directory exists before writing files
+   - Added `FileUtils.mkdir_p('output')` check
+   - Prevents "No such file or directory" errors on clean builds
+
+3. **PDF Copy Safety**: Modified `script/html.rb` to only copy PDF if it exists
+   - Changed `cp output/book.pdf output/book/` to conditional execution
+   - Prevents build failures when PDF generation is unavailable
+
+4. **Removed `open` Command**: Commented out `open output/book.pdf` in `script/pdf1.rb`
+   - The `open` command is not available in CI/CD environments
+   - Prevents unnecessary build failures
+
+These changes ensure the build succeeds even when PDF generation tools are unavailable, which is common in containerized or restricted build environments like Cloudflare Pages.
+
 ## Troubleshooting
 
 ### rdiscount Compilation Failure (Ruby 3.2+)

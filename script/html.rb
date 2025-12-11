@@ -170,7 +170,8 @@ task :html => :merge do
     end
     
     `cp -Rf assets output/book/`
-    `cp output/book.pdf output/book/`
+    # Copy PDF if it exists (may not be available in all build environments)
+    `cp output/book.pdf output/book/` if File.exist?('output/book.pdf')
     
   end
 end
