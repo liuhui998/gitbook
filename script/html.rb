@@ -2,7 +2,7 @@ require 'fileutils'
 require 'pp'
 require 'rubygems'
 require 'builder'
-require 'rdiscount'
+require 'kramdown'
 require "uv"
 
 #MIN_SIZE = 1200
@@ -60,7 +60,7 @@ task :html => :merge do
   
   if File.exist?('output/full_book.markdown')
     output = File.new('output/full_book.markdown').read
-    output = RDiscount.new(output).to_html
+    output = Kramdown::Document.new(output, input: 'GFM').to_html
 
     ## pdf version ##
     
@@ -86,7 +86,7 @@ task :html => :merge do
     chapter_files = []
     
     count = 0
-    sections = output.split('<h1>')
+    sections = output.split(/<h1[^>]*>/)  # Match h1 with any attributes
     sections.each do |section|
       # extract title
       title, section = section.split('</h1>')
@@ -94,9 +94,9 @@ task :html => :merge do
       count += 1
       title = count.to_s + '. ' + title.strip
       puts title
-      
+
       chlinks = []
-      chapters = section.split('<h2>')
+      chapters = section.split(/<h2[^>]*>/)  # Match h2 with any attributes
       chapters.shift
       subcount = 0
       chapters.each do |chapter|
@@ -135,28 +135,28 @@ task :html => :merge do
     end
     
     toc = Builder::XmlMarkup.new(:indent => 1)
-    toc.table { toc.tr { 
+    toc.table { toc.tr {
       toc.td(:valign => "top") {
-        links[0,4].each do |section_title, section_array|
+        (links[0,4] || []).each do |section_title, section_array|
           toc.h3(:class => 'title') { toc << section_title }
           toc.table do
             section_array.each do |chapter_title, chapter_file, chsize|
               toc.tr { toc.td {
                 (chsize > MIN_SIZE) ? extra = 'done' : extra = 'todo'
-                toc.a(:href => chapter_file, :class => "chapter-link #{extra}") << chapter_title
+                toc.a(:href => chapter_file, :class => "chapter-link #{extra}") { toc << chapter_title }
               }}
             end
           end
         end
       }
       toc.td(:valign => "top") {
-        links[4,3].each do |section_title, section_array|
+        (links[4,3] || []).each do |section_title, section_array|
           toc.h3(:class => 'title') { toc << section_title }
           toc.table do
             section_array.each do |chapter_title, chapter_file, chsize|
               toc.tr { toc.td {
                 (chsize > MIN_SIZE) ? extra = 'done' : extra = 'todo'
-                toc.a(:href => chapter_file, :class => "chapter-link #{extra}") << chapter_title
+                toc.a(:href => chapter_file, :class => "chapter-link #{extra}") { toc << chapter_title }
               }}
             end
           end

@@ -54,25 +54,26 @@
 
 下面是一个运行 Rspec 测试的 Ruby 脚本，如果没有通过这个测试，那么不允许提交(commit)。
 
-	ruby  
-	html_path = "spec_results.html"  
-	`spec -f h:#{html_path} -f p spec` # run the spec. send progress to screen. save html results to html_path  
+```ruby
+html_path = "spec_results.html"
+`spec -f h:#{html_path} -f p spec` # run the spec. send progress to screen. save html results to html_path
 
-	# find out how many errors were found  
-	html = open(html_path).read  
-	examples = html.match(/(\d+) examples/)[0].to_i rescue 0  
-	failures = html.match(/(\d+) failures/)[0].to_i rescue 0  
-	pending = html.match(/(\d+) pending/)[0].to_i rescue 0  
+# find out how many errors were found
+html = open(html_path).read
+examples = html.match(/(\d+) examples/)[0].to_i rescue 0
+failures = html.match(/(\d+) failures/)[0].to_i rescue 0
+pending = html.match(/(\d+) pending/)[0].to_i rescue 0
 
-	if failures.zero?  
-	  puts "0 failures! #{examples} run, #{pending} pending"  
-	else  
-	  puts "\aDID NOT COMMIT YOUR FILES!"  
-	  puts "View spec results at #{File.expand_path(html_path)}"  
-	  puts  
-	  puts "#{failures} failures! #{examples} run, #{pending} pending"  
-	  exit 1  
-	end
+if failures.zero?
+  puts "0 failures! #{examples} run, #{pending} pending"
+else
+  puts "\aDID NOT COMMIT YOUR FILES!"
+  puts "View spec results at #{File.expand_path(html_path)}"
+  puts
+  puts "#{failures} failures! #{examples} run, #{pending} pending"
+  exit 1
+end
+```
 
     
 ### prepare-commit-msg ###
@@ -101,7 +102,7 @@ It takes one to three parameters.  The first is the name of the file
 git提供的样本`prepare-commit-msg.sample`会把当前合并提交信息(a merge's commit message)中的`Conflicts:`部分注释掉。 
 
 
-#Harry-Chen 校对至此#
+**Harry-Chen 校对至此**
 
 ### commit-msg ###
 
@@ -180,7 +181,9 @@ input a line of the format:
 
 每执行一个接收(receive)操作都会调用一次这个钩子。它没有命令行参数，但是它会从标准输入(standard input)读取需要更新的ref，格式如下：
 
-  <old-value> SP <new-value> SP <ref-name> LF
+```
+<old-value> SP <new-value> SP <ref-name> LF
+```
 
 译者注：SP是空格，LF是回车。
 
@@ -207,25 +210,28 @@ If you wrote it in Ruby, you might get the args this way:
 
 如果你用ruby,那么可以像下面的代码一样得到它们的参数。
 
-	ruby
-	rev_old, rev_new, ref = STDIN.read.split(" ")
+```ruby
+rev_old, rev_new, ref = STDIN.read.split(" ")
+```
 
 Or in a bash script, something like this would work:
-	
+
 在bash脚本中，下面代码也可能得到参数。
 
-	#!/bin/sh
-	# <oldrev> <newrev> <refname>
-	# update a blame tree
-	while read oldrev newrev ref
+```bash
+#!/bin/sh
+# <oldrev> <newrev> <refname>
+# update a blame tree
+while read oldrev newrev ref
+do
+	echo "STARTING [$oldrev $newrev $ref]"
+	for path in `git diff-tree -r $oldrev..$newrev | awk '{print $6}'`
 	do
-		echo "STARTING [$oldrev $newrev $ref]"
-		for path in `git diff-tree -r $oldrev..$newrev | awk '{print $6}'`
-		do
-		  echo "git update-ref refs/blametree/$ref/$path $newrev"
-		  `git update-ref refs/blametree/$ref/$path $newrev`
-		done
+	  echo "git update-ref refs/blametree/$ref/$path $newrev"
+	  `git update-ref refs/blametree/$ref/$path $newrev`
 	done
+done
+```
 
     
 ### update ###
