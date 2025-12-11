@@ -26,12 +26,12 @@
 
 如果你发现本书的中任何错误，或者你想参与进此书的编写，你可以给我写email
 [schacon@gmail.com](mailto:schancon@gmail.com), 或者你也可以用git得到本书的原始
-档案(source) [http://github.com/schacon/gitbook](http://github.com/schacon/gitbook),
+档案(source) [https://github.com/schacon/gitbook](https://github.com/schacon/gitbook),
 然后给我发一个补丁(patch)或者一个pull请求
 
 译者注:如果有哪位朋友发现中译本的错误,或者是想参加此书的翻译，也可以给我发email
 [liuhui998@gmail.com](mailto:liuhui998@gmail.com), 或者你也可以用git得到本书的原始
-档案(source) [http://github.com/liuhui998/gitbook](http://github.com/liuhui998/gitbook),
+档案(source) [https://github.com/liuhui998/gitbook](https://github.com/liuhui998/gitbook),
 然后给我发一个补丁(patch)或者一个pull请求
 
 
@@ -39,8 +39,8 @@
 
 这本书由很多不同的资料汇聚起来，如果你更愿意阅读原始的文章和资料，下面提供了它们的url:
 
-* [Git User Manual](http://www.kernel.org/pub/software/scm/git/docs/user-manual.html)
-* [The Git Tutorial](http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html)
-* [The Git Tutorial pt 2](http://www.kernel.org/pub/software/scm/git/docs/gittutorial-2.html)
-* ["My Git Workflow" blog post](http://osteele.com/archives/2008/05/my-git-workflow)
+* [Git User Manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html)
+* [The Git Tutorial](https://www.kernel.org/pub/software/scm/git/docs/gittutorial.html)
+* [The Git Tutorial pt 2](https://www.kernel.org/pub/software/scm/git/docs/gittutorial-2.html)
+* ["My Git Workflow" blog post](https://osteele.com/archives/2008/05/my-git-workflow)
 

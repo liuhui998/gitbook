@@ -1,10 +1,10 @@
 ## 找回丢失的对象 ##
 
 译者注: 原书这里只有两个链接：
-[Recovering Lost Commits Blog Post](http://programblings.com/2008/06/07/the-illustrated-guide-to-recovering-lost-commits-with-git)，　
-[Recovering Corrupted Blobs by Linus](http://www.kernel.org/pub/software/scm/git/docs/howto/recover-corrupted-blob-object.txt)
+[Recovering Lost Commits Blog Post](https://programblings.com/2008/06/07/the-illustrated-guide-to-recovering-lost-commits-with-git)，　
+[Recovering Corrupted Blobs by Linus](https://www.kernel.org/pub/software/scm/git/docs/howto/recover-corrupted-blob-object.txt)
 
-我根据第一个链接，整理了一篇[博文](http://liuhui998.com/2010/10/22/recover_lost_commits_with_git/)，并把它做为原书补充。
+我根据第一个链接，整理了一篇[博文](https://liuhui998.com/2010/10/22/recover_lost_commits_with_git/)，并把它做为原书补充。
 
 在玩git的过程中，常有失误的时候，有时把需要的东东给删了。
 不过没有关系，git给了我们一层安全网，让们能有机会把失去的东东给找回来。
@@ -180,9 +180,9 @@ BTW：你可以直接把下面的命令复制到shell里执行。
 
 ###备注###
 
-这篇文章主要内容来自这里：[The illustrated guide to recovering lost commits with Git](http://programblings.com/2008/06/07/the-illustrated-guide-to-recovering-lost-commits-with-git/),我做了一些整理的工作。
+这篇文章主要内容来自这里：[The illustrated guide to recovering lost commits with Git](https://programblings.com/2008/06/07/the-illustrated-guide-to-recovering-lost-commits-with-git/),我做了一些整理的工作。
 
-如果对于文中的一些命令不熟，可以参考[Git Community Book中文版](http://gitbook.liuhui998.com)
+如果对于文中的一些命令不熟，可以参考[Git Community Book中文版](https://gitbook.liuhui998.com)
 
-其实这里最重要的一个命令就是：git fsck --lost-found，因为git中把commit删了后，并不是真正的删除，而是变成了悬空对象（dangling commit）。我们只要把把这悬空对象（dangling commit）找出来，用[git rebase](http://gitbook.liuhui998.com/4_2.html)也好，用[git merge](http://gitbook.liuhui998.com/3_3.html)也行就能把它们给恢复。
+其实这里最重要的一个命令就是：git fsck --lost-found，因为git中把commit删了后，并不是真正的删除，而是变成了悬空对象（dangling commit）。我们只要把把这悬空对象（dangling commit）找出来，用[git rebase](https://gitbook.liuhui998.com/4_2.html)也好，用[git merge](https://gitbook.liuhui998.com/3_3.html)也行就能把它们给恢复。
 

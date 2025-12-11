@@ -37,4 +37,4 @@ git协议有不错的性能和可靠性, 但是如果主机上已经配好了一
 
 拼好了proj.git的web URL, 任何人都可以从这个地址来克隆(clone)或拉取(pull) git仓库内容. 下面这个命令就是例子:
 
-    $ git clone http://yourserver.com/~you/proj.git
+    $ git clone https://yourserver.com/~you/proj.git

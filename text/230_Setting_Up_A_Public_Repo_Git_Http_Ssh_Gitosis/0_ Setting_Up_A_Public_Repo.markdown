@@ -53,4 +53,4 @@ linkgit:git-update-server-info[1] and linkgit:githooks[5].)
 Advertise the URL of proj.git.  Anybody else should then be able to
 clone or pull from that URL, for example with a command line like:
 
-    $ git clone http://yourserver.com/~you/proj.git
+    $ git clone https://yourserver.com/~you/proj.git

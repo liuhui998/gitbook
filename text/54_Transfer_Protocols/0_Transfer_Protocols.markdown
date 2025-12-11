@@ -32,7 +32,7 @@ For instance, if you ask to fetch the master branch, it will see that master is
 pointing to <code>32aae7ae</code> and that your master is pointing to <code>ab04d88</code>,
 so you need <code>32aae7ae</code>.  You fetch that object 
 
-	CONNECT http://myserver.com
+	CONNECT https://myserver.com
 	GET /git/myproject.git/objects/32/aae7aef7a412d62192f710f2130302997ec883 - 200
 	
 and it looks like this:

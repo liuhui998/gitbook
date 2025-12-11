@@ -1,6 +1,6 @@
 /* 
 JQuery Curvy Corners by Mike Jolley - 
-http://blue-anvil.com
+https://blue-anvil.com
 18th July 2008
 v1.6 - B180708
 */

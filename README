@@ -8,7 +8,7 @@ resource to be hosted on the main Git website.
 * Clone this source, add to it and send me (schacon@gmail.com) a patch or pull request
 * Install required gems:
     $ gem install rake ultraviolet discount rdiscount builder
-* For PDF output install prince (http://www.princexml.com/download/)
+* For PDF output install prince (https://www.princexml.com/download/)
 * Generate book through
     $ rake html
   or

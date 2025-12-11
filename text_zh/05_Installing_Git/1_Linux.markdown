@@ -9,11 +9,11 @@
 
 如果你用上面的命令不起作用的话，你可以从下面两个站点下载 .deb 或 .rpm 包:
 
-[RPM Packages](http://kernel.org/pub/software/scm/git/RPMS/)
+[RPM Packages](https://kernel.org/pub/software/scm/git/RPMS/)
 
-[Stable Debs](http://www.backports.org/debian/pool/main/g/git-core/)
+[Stable Debs](https://www.backports.org/debian/pool/main/g/git-core/)
 
 如果你在Linux兴趣从源代码开始安装的话,下面的这篇文章也许对你有帮助:
-[Article: Installing Git on Ubuntu](http://chrisolsen.org/2008/03/10/installing-git-on-ubuntu/)
+[Article: Installing Git on Ubuntu](https://chrisolsen.org/2008/03/10/installing-git-on-ubuntu/)
 
  

@@ -18,7 +18,7 @@ cloned either over the git:// protocol:
 
 or over http:
 
-    git clone http://www.kernel.org/pub/scm/git/git.git
+    git clone https://www.kernel.org/pub/scm/git/git.git
 
 The git:// protocol is faster and more efficient, but sometimes it is
 necessary to use http when behind corporate firewalls or what have you. In
@@ -29,7 +29,7 @@ on the server.
 By default, Git will name the new directory it has checked out your cloned
 code into after whatever comes directly before the '.git' in the path of the
 cloned project. (ie. *git clone
-http://git.kernel.org/linux/kernel/git/torvalds/linux-2.6.git* will result in
+https://git.kernel.org/linux/kernel/git/torvalds/linux-2.6.git* will result in
 a new directory named 'linux-2.6')
 
 ### Initializing a New Repository ###

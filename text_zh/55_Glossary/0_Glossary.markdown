@@ -1,6 +1,6 @@
 ## 术语表 ##
 
-我们把在Git里常用的一些名词做了解释列在这里。这些名词(terms)全部来自[Git Glossary](http://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)。
+我们把在Git里常用的一些名词做了解释列在这里。这些名词(terms)全部来自[Git Glossary](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)。
 
 _alternate object database_
 
@@ -144,7 +144,7 @@ _dirty（脏）_
 
 _ent_
 
->   某些人给树名(tree-ish)起的另外一个别名，这里`http://en.wikipedia.org/wiki/Ent_(Middle-earth)`有更详细的解释。最好不要使用这个名词，以免让大家糊涂。
+>   某些人给树名(tree-ish)起的另外一个别名，这里`https://en.wikipedia.org/wiki/Ent_(Middle-earth)`有更详细的解释。最好不要使用这个名词，以免让大家糊涂。
 
 
 _evil merge（坏的合并）_

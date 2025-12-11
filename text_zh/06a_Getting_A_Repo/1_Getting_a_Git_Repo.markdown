@@ -11,13 +11,13 @@
 
 也可以通过http 协议来访问:
 
-    git clone http://www.kernel.org/pub/scm/git/git.git
+    git clone https://www.kernel.org/pub/scm/git/git.git
 
 git://协议较为快速和有效,但是有时必须使用http协议,比如你公司的防火墙阻止了你的非http访问请求.如果你执行了上面两行命令中的任意一个,你会看到一个新目录: 'git',它包含所有的Git源代码和历史记录.
 
 
 在默认情况下，Git会把"Git URL"里目录名的'.git'的后辍去掉,做为新克隆(clone)项目的目录名:
- (例如. *git clone http://git.kernel.org/linux/kernel/git/torvalds/linux-2.6.git*  会建立一个目录叫'linux-2.6')
+ (例如. *git clone https://git.kernel.org/linux/kernel/git/torvalds/linux-2.6.git*  会建立一个目录叫'linux-2.6')
 
 
 ### 初始化一个新的仓库 ###

@@ -38,6 +38,6 @@
 另外, 若你需要修改内嵌外部项目的内容, 使用子模块方式可以更容易地提交你的修改.
 
 
-(from [Using Subtree Merge](http://www.kernel.org/pub/software/scm/git/docs/howto/using-merge-subtree.html))
+(from [Using Subtree Merge](https://www.kernel.org/pub/software/scm/git/docs/howto/using-merge-subtree.html))
 
 

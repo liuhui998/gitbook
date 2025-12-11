@@ -9,7 +9,7 @@ Git comes with a script called git-svn that has a clone command that
 will import a subversion repository into a new git repository.  There
 is also a free tool on the GitHub service that will do this for you.
 	
-	$ git-svn clone http://my-project.googlecode.com/svn/trunk new-project
+	$ git-svn clone https://my-project.googlecode.com/svn/trunk new-project
 
 This will give you a new Git repository with all the history of the
 original Subversion repo.  This takes a pretty good amount of time, generally,

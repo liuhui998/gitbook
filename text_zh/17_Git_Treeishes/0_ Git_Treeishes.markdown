@@ -87,7 +87,7 @@ Git的引用日志(Ref Log)可以让你做一些‘相对'查询操作:
 
 ### 树对象指针 ###
 
-如果大家对第一章[Git对象模型](http://gitbook.liuhui998.com/1_2.html)还有印象的话, 就记得提交对象(commit object)是指向一个树对象(tree object)的. 假如你要得到一个提交对象(commit object)指向的树对象(tree object)的sha串名, 你就可以在‘树名'的后面加上'^{tree}'来得到它:
+如果大家对第一章[Git对象模型](https://gitbook.liuhui998.com/1_2.html)还有印象的话, 就记得提交对象(commit object)是指向一个树对象(tree object)的. 假如你要得到一个提交对象(commit object)指向的树对象(tree object)的sha串名, 你就可以在‘树名'的后面加上'^{tree}'来得到它:
 
 	master^{tree}
 

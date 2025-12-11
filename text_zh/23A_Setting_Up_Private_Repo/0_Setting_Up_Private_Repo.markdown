@@ -16,7 +16,7 @@
 
 上面的命令会提示你输入ssh密码或是使用公钥(public key).
 
-译者注1:配置ssh公钥的方法可以参考[这里](http://help.github.com/linux-key-setup/),这样在ssh访问时就可以不要输入命令.
+译者注1:配置ssh公钥的方法可以参考[这里](https://help.github.com/linux-key-setup/),这样在ssh访问时就可以不要输入命令.
 
 译者注2:git over ssh方式对仓库有读写权限, git://协议只能读仓库.
 
@@ -26,8 +26,8 @@
 
 如果你不想为每个用户配置不同的帐号,你可以用一个叫Gitosis的工具. 在gitosis中, 有一个叫 authorized_keys 的文件，里面包括了所有授权可以访问仓库的用户的公钥(public key), 这样每个用户就可以直接使用'git'用户来推送(push)和拉(pull)代码.
 
-[安装与配置Gitosis(英文)](http://www.urbanpuddle.com/articles/2008/07/11/installing-git-on-a-server-ubuntu-or-debian)
+[安装与配置Gitosis(英文)](https://www.urbanpuddle.com/articles/2008/07/11/installing-git-on-a-server-ubuntu-or-debian)
 
-译者注1: [github.com](http://help.github.com/linux-key-setup/)就是采用这种方式来配置私有(仓库)访问.
+译者注1: [github.com](https://help.github.com/linux-key-setup/)就是采用这种方式来配置私有(仓库)访问.
 
-译者注２: [Gitosis配置(中文)](http://progit.chunzi.me/zh/ch4-7.html)
+译者注２: [Gitosis配置(中文)](https://progit.chunzi.me/zh/ch4-7.html)

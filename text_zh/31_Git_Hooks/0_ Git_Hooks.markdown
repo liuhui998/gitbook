@@ -364,4 +364,4 @@ for the user.
 
 ### 参考 ###
 
-[Git Hooks](http://www.kernel.org/pub/software/scm/git/docs/githooks.html) * http://probablycorey.wordpress.com/2008/03/07/git-hooks-make-me-giddy/
+[Git Hooks](https://www.kernel.org/pub/software/scm/git/docs/githooks.html) * https://probablycorey.wordpress.com/2008/03/07/git-hooks-make-me-giddy/

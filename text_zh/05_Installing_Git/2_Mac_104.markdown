@@ -1,6 +1,6 @@
 ### Mac 10.4 ###
 
-在Mac10.4和 10.5,如果你安装了MacPorts,你可以通过 [MacPorts](http://www.macports.org/)来安装Git。如果你没有安装MacPort, 你可以从 [这里](http://www.macports.org/install.php)来安装它.
+在Mac10.4和 10.5,如果你安装了MacPorts,你可以通过 [MacPorts](https://www.macports.org/)来安装Git。如果你没有安装MacPort, 你可以从 [这里](https://www.macports.org/install.php)来安装它.
 
 当你安装好MacPorts后，你可通过下面的命令来安装:
 
@@ -8,7 +8,7 @@
 
 如果你想从源代码开始安装，下面这些文章可能对你有帮助:
 
-[Article: Installing Git on Tiger](http://rails.wincent.com/wiki/Installing_Git_1.5.2.3_on_Mac_OS_X_Tiger)
+[Article: Installing Git on Tiger](https://rails.wincent.com/wiki/Installing_Git_1.5.2.3_on_Mac_OS_X_Tiger)
 
-[Article: Installing Git and git-svn on Tiger from source](http://larrytheliquid.com/2007/12/29/compiling-git-and-git-svn-on-osx-tiger/)
+[Article: Installing Git and git-svn on Tiger from source](https://larrytheliquid.com/2007/12/29/compiling-git-and-git-svn-on-osx-tiger/)
 

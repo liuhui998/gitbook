@@ -29,7 +29,7 @@
 下面就是抓取时的交互过程(http协议层):
 
 
-	CONNECT http://myserver.com
+	CONNECT https://myserver.com
 	GET /git/myproject.git/objects/32/aae7aef7a412d62192f710f2130302997ec883 - 200
 	
 

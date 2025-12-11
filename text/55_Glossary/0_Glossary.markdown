@@ -2,7 +2,7 @@
 
 Here we have the meanings of some terms used into Git context.  
 These terms were entirely copied from 
-[Git Glossary](http://www.kernel.org/pub/software/scm/git/docs/gitglossary.html).  
+[Git Glossary](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html).  
 
 
 _alternate object database_
@@ -144,7 +144,7 @@ _dirty_
 _ent_
 
 >   Favorite synonym to "tree-ish" by some total geeks. See
-    `http://en.wikipedia.org/wiki/Ent_(Middle-earth)` for an in-depth
+    `https://en.wikipedia.org/wiki/Ent_(Middle-earth)` for an in-depth
     explanation. Avoid this term, not to confuse people.
 
 _evil merge_

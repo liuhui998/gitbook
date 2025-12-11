@@ -48,6 +48,6 @@ submodule objects. This may be a problem with the subtree merge.
 Also, in case you make changes to the other project, it is easier to 
 submit changes if you just use submodules.
 
-(from [Using Subtree Merge](http://www.kernel.org/pub/software/scm/git/docs/howto/using-merge-subtree.html))
+(from [Using Subtree Merge](https://www.kernel.org/pub/software/scm/git/docs/howto/using-merge-subtree.html))
 
 

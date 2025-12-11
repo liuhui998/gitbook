@@ -1,11 +1,11 @@
 ### Mac 10.5 ###
 
-在Leopard系统下，你也可以通过MacPorts来安装,但是你有一个新的选项:"一个漂亮的安装包", 你可以从这里来下载:[Git OSX Installer](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
+在Leopard系统下，你也可以通过MacPorts来安装,但是你有一个新的选项:"一个漂亮的安装包", 你可以从这里来下载:[Git OSX Installer](https://code.google.com/p/git-osx-installer/downloads/list?can=3)
 
 如果你想从源代码开始安装，我希望下面些资料能对你有帮助:
 
-[Article: Installing Git on OSX Leopard](http://solutions.treypiepmeier.com/2008/02/25/installing-git-on-os-x-leopard/)
+[Article: Installing Git on OSX Leopard](https://solutions.treypiepmeier.com/2008/02/25/installing-git-on-os-x-leopard/)
 
-[Article: Installing Git on OS 10.5](http://dysinger.net/2007/12/30/installing-git-on-mac-os-x-105-leopard/)
+[Article: Installing Git on OS 10.5](https://dysinger.net/2007/12/30/installing-git-on-mac-os-x-105-leopard/)
 
 

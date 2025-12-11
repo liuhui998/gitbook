@@ -15,10 +15,10 @@
 
 ## 🌏 译者
 
-* [Peter Liu](http://liuhui998.com)
-* [Liu Wei](http://blog.liuw.name)
-* [Wendal](http://wendal.net)
-* [Jiancong Guo](http://www.cbpm-gw.com)
+* [Peter Liu](https://liuhui998.com)
+* [Liu Wei](https://blog.liuw.name)
+* [Wendal](https://wendal.net)
+* [Jiancong Guo](https://www.cbpm-gw.com)
 
 ## 📚 内容概览
 
