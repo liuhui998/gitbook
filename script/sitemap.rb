@@ -5,7 +5,7 @@
 require 'builder'
 require 'time'
 
-BASE_URL = 'https://gitbook.lkiuhui998.com'
+BASE_URL = 'https://gitbook.liuhui998.com.com'
 OUTPUT_DIR = 'output/book'
 SITEMAP_FILE = 'output/book/sitemap.xml'
 

@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Git Community Book 中文翻译项目 - A Chinese translation of the Git Community Book. This is a static site generator built with Ruby/Rake that converts Markdown content into HTML chapters and PDF books.
 
-**Online**: https://gitbook.lkiuhui998.com
+**Online**: https://gitbook.liuhui998.com.com
 **Original**: https://github.com/schacon/gitbook
 
 ## Build System Architecture
