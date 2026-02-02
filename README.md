@@ -86,6 +86,14 @@ rake pdf
 
 本项目遵循原项目的许可证。详见 [COPYING](COPYING) 文件。
 
+## 🌐 其他项目 | Other Projects
+
+**[English Grammar App](https://english-grammar.app)** - 英语语法学习工具
+
+1. **免费互动练习 | Free Interactive Exercises** - 涵盖时态、条件句、情态动词等 18 个语法类别，500+ 练习题 | Covers 18 grammar categories including tenses, conditionals, modal verbs with 500+ exercises
+2. **即时反馈 | Instant Feedback** - 答题后立即获得正确与否的反馈，快速提升学习效率 | Get immediate feedback on your answers to improve learning efficiency
+3. **全级别支持 | All Levels Supported** - 从入门 (A1) 到高级 (C1)，适合全球各地的英语学习者 | From beginner (A1) to advanced (C1), suitable for learners worldwide
+
 
 
 
